@@ -11,7 +11,7 @@ for (i = 0; i < comments.length; i++) {
 	}
 }
 
-function goToParentLeft(currentSmallestCoordDifference, stopCondition){
+function goToParentLeft(){
 	currentElement = -1;
 	currentSmallestCoordDifference = -100000;
 	for (i = 0; i < parents.length; i++){
