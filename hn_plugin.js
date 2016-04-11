@@ -13,7 +13,7 @@ for (i = 0; i < comments.length; i++) {
 
 function goToParentLeft(){
 	currentElement = -1;
-	currentSmallestCoordDifference = -100000;
+	currentSmallestCoordDifference = Number.NEGATIVE_INFINITY;
 	for (i = 0; i < parents.length; i++){
 		yCoordDifference = parentsYCoords[i] - window.pageYOffset + 1;
 		if(yCoordDifference < 0 && yCoordDifference > currentSmallestCoordDifference){
@@ -26,7 +26,7 @@ function goToParentLeft(){
 
 function goToParentRight(){
 	currentElement = -1;
-	currentSmallestCoordDifference = 100000;
+	currentSmallestCoordDifference = Number.POSITIVE_INFINITY;;
 	for (i = 0; i < parents.length; i++){
 		yCoordDifference = parentsYCoords[i] - window.pageYOffset - 1;
 		if(yCoordDifference > 0 && yCoordDifference < currentSmallestCoordDifference){
