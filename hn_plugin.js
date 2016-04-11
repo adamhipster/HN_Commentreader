@@ -16,7 +16,6 @@ function goToParentLeft(currentSmallestCoordDifference, stopCondition){
 	currentSmallestCoordDifference = -100000;
 	for (i = 0; i < parents.length; i++){
 		yCoordDifference = parentsYCoords[i] - window.pageYOffset + 1;
-		console.log(yCoordDifference + " " + currentSmallestCoordDifference);
 		if(yCoordDifference < 0 && yCoordDifference > currentSmallestCoordDifference){
 			currentSmallestCoordDifference = yCoordDifference;
 			currentElement = i;
@@ -30,7 +29,6 @@ function goToParentRight(){
 	currentSmallestCoordDifference = 100000;
 	for (i = 0; i < parents.length; i++){
 		yCoordDifference = parentsYCoords[i] - window.pageYOffset - 1;
-		console.log(yCoordDifference + " " + currentSmallestCoordDifference);
 		if(yCoordDifference > 0 && yCoordDifference < currentSmallestCoordDifference){
 			currentSmallestCoordDifference = yCoordDifference;
 			currentElement = i;
