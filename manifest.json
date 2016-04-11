@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"name": "HN Commentreader",
+	"version": "1.0",
+
+	"description": "Go to the next conversation when reading Hacker News comments",
+	"icons": {
+		"16": "img/icon.png",
+		"48": "img/icon.png",
+		"128": "img/icon.png"
+		},
+
+	"browser_action": {
+		"default_icon": "img/icon.png",
+		"default_title": "HN Commentreader"
+	},
+
+	"author": "Timothy Tjen & Melvin Roest",
+
+	"permissions": [
+		"activeTab"
+	],
+
+	"content_scripts": [
+		{
+			"matches": ["https://news.ycombinator.com/item?id=*"],
+			"js":["hn_plugin.js"]
+		}
+	]
+
+}
