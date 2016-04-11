@@ -26,7 +26,7 @@ function goToParentLeft(){
 
 function goToParentRight(){
 	currentElement = -1;
-	currentSmallestCoordDifference = Number.POSITIVE_INFINITY;;
+	currentSmallestCoordDifference = Number.POSITIVE_INFINITY;
 	for (i = 0; i < parents.length; i++){
 		yCoordDifference = parentsYCoords[i] - window.pageYOffset - 1;
 		if(yCoordDifference > 0 && yCoordDifference < currentSmallestCoordDifference){
