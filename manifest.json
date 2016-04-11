@@ -9,9 +9,10 @@
 		"48": "img/icon.png",
 		"128": "img/icon.png"
 		},
+	// thank you to Y Combinator for letting us use your icon under the Creative Commons Attribution 2.5 license
 
 	"browser_action": {
-		"default_icon": "img/icon.png",
+		"default_icon": "img/icon_19.png",
 		"default_title": "HN Commentreader"
 	},
 
