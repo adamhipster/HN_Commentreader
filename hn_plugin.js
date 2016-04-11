@@ -7,7 +7,7 @@ for (i = 0; i < comments.length; i++) {
 	var widthOfComment = commentsIndex[i].children[0].width;
 	if (widthOfComment == 0){
 		parents.push(comments[i]);
-		parentsYCoords.push(comments[i].getBoundingClientRect().y);
+		parentsYCoords.push(comments[i].getBoundingClientRect().top);
 	}
 }
 
